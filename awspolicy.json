@@ -1,0 +1,20 @@
+{
+    "Id": "Policy1715413986296",
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Stmt1715413983169",
+        "Action": [
+          "s3:GetObject"
+        ],
+        "Effect": "Allow",
+        "Resource": "arn:aws:s3:::lydiab-alt-school-11-05-24",
+        "Condition": {
+          "ArnEquals": {
+            "aws:SourceArn": "arn:aws:cloudfront::533267345303:distribution/E3GS5ETPU4Q5E7"
+          }
+        },
+        "Principal":"*"
+      }
+    ]
+  }
